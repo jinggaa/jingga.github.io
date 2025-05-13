@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | PT Haleyora Power</title>
+  <style>
+    body {
+      background-color: skyblue;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #007acc;
+      color: white;
+    }
+
+    nav {
+      background-color: #005f99;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 60px;
+      gap: 30px;
+    }
+
+    .text-section {
+      flex: 1 1 60%;
+      animation: fadeIn 1s ease;
+    }
+
+    .image-section {
+      flex: 1 1 35%;
+      animation: fadeIn 1.2s ease;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px 60px 40px;
+      justify-content: space-between;
+    }
+
+    .card {
+      flex: 1 1 30%;
+      background-color: #ffffffcc;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      color: #005f99;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .container, .info-section {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .card {
+        flex: 1 1 100%;
+      }
+
+      .text-section, .image-section {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PT HALEYORA POWER</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="news.html">News</a>
+    <a href="news-detail.html">News Detail</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <div class="text-section">
+      <h2>Tentang Kami</h2>
+      <p>
+        PT Haleyora Power merupakan anak perusahaan dari PT PLN (Persero) yang berfokus pada layanan operasional dan pemeliharaan jaringan distribusi tenaga listrik. 
+        Berdiri sejak 18 Oktober 2011, kami hadir untuk mendukung misi PLN dalam menciptakan sistem kelistrikan yang andal dan efisien di seluruh pelosok negeri. 
+        Saat ini, PT Haleyora Power aktif beroperasi di wilayah Sumatera, Jawa, dan Bali.
+      </p>
+      <p>HP ditugaskan untuk mengelola bisnis penjualan tenaga listrik (ritel), yang di masa mendatang diperkirakan akan makin kompetitif melalui pengembangan penyediaan tenaga listrik dengan layanan dan tarif khusus, sehingga dapat menekan subsidi.
+        Hal ini diawali dengan Direksi PLN melakukan kerjasama dengan PT Pelindo untuk menyalurkan dan menjual listrik kepada tenants di kawasan milik Pelindo 
+        dengan skema penjualan listrik secara bulk dan tarif premium kepada perusahaan patungan yang dibentuk oleh Pelindo II dengan HP sebagai wakil dari PLN. Perjanjian pendirian perusahaan No.001/041/HP/2012 telah ditandatangani pada 4 Oktober 2012.</p>
+    </div>
+    <div class="image-section">
+      <img src="haleyora.png" alt="Gedung PT Haleyora Power" />
+    </div>
+  </div>
+
+  <div class="info-section">
+    <div class="card">
+      <h3>Visi</h3>
+      <p>
+        Menjadi perusahaan layanan energi terbaik yang mendukung pembangunan nasional melalui infrastruktur kelistrikan yang andal.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Misi</h3>
+      <ul>
+        <li>Mendukung PLN menyediakan distribusi listrik yang efisien dan berkualitas</li>
+        <li>Meningkatkan kompetensi SDM secara berkelanjutan</li>
+        <li>Berinovasi melalui teknologi digital kelistrikan</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Nilai-Nilai</h3>
+      <ul>
+        <li>Profesionalisme</li>
+        <li>Integritas</li>
+        <li>Inovasi</li>
+        <li>Keselamatan Kerja</li>
+        <li>Pelayanan Prima</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

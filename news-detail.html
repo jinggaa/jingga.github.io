@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News Detail | PT Haleyora Power</title>
+  <style>
+    body {
+      background-color: skyblue;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #007acc;
+      color: white;
+    }
+    nav {
+      background-color: #005f99;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 30px 50px;
+    }
+    h1 {
+      text-align: center;
+    }
+    h3 {
+      text-align: left;
+      color: #005f99;
+    }
+    p {
+      text-align: justify;
+      font-size: 16px;
+    }
+    .news-card {
+      background-color: #ffffffcc;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin: 20px auto;
+      width: 80%;
+      display: none;
+      animation: fadeIn 1s ease;
+    }
+    .news-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    .btn-back {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #005f99;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn-back:hover {
+      background-color: #007acc;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PT HALEYORA POWER</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="news.html">News</a>
+    <a href="news-detail.html">News Detail</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <div class="container">
+    <!-- Berita 1 -->
+    <div id="1" class="news-card">
+      <h3>Haleyora Power Gandeng PT Pilar Bahtera Energi Hadirkan Keandalan Listrik Kualitas Tinggi</h3>
+      <img src="satu.png" alt="Berita 1" />
+      <p>Dengan pasokan listrik yang andal dan infrastruktur yang terpelihara dengan baik ...</p>
+      <a href="news.html" class="btn-back">Kembali ke Berita</a>
+    </div>
+
+    <!-- Berita 2 -->
+    <div id="2" class="news-card">
+      <h3>Gelar Kesamaptaan untuk Personel Yantek</h3>
+      <img src="tiga.png" alt="Berita 2" />
+      <p>Kegiatan ini tidak hanya melatih kedisiplinan, fisik dan mental saja ...</p>
+      <a href="news.html" class="btn-back">Kembali ke Berita</a>
+    </div>
+
+    <!-- Berita 3 -->
+    <div id="3" class="news-card">
+      <h3>Siaga Kelistrikan: Personel Haleyora Power Dukung Jumat Agung dan Paskah</h3>
+      <img src="dua.png" alt="Berita 3" />
+      <p>Kegiatan pemeliharaan seperti pengecekan menyeluruh terhadap infrastruktur ...</p>
+      <a href="news.html" class="btn-back">Kembali ke Berita</a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hash = window.location.hash;
+
+      if (hash) {
+        const news = document.querySelector(hash);
+        if (news) {
+          news.style.display = "block";
+        }
+      } else {
+        // Default tampilkan berita pertama jika tidak ada hash
+        const first = document.querySelector(".news-card");
+        if (first) first.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>
+
